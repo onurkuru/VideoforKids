@@ -23,11 +23,13 @@ class App extends Component {
     headerStyle: {
       backgroundColor: '#fff',
     },
-    headerTitle: (
-        <Image 
-          style={{height:22, width: 100,color: '#fff'}} 
-          source={require('../../images/logo-1.jpg')} />
-    ),
+    headerTitle: ( 
+      <View style={{ flex: 1, alignItems: "center" }}> 
+      <Image source={require('../../images/logo-1.jpg')} style={{ height: 22, width: 100 }} /> 
+      </View> 
+      ), 
+    headerLeft: null, 
+    headerRight: null 
   }
 
 

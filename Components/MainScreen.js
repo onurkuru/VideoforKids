@@ -67,6 +67,7 @@ const AppTabNavigator = TabNavigator({
 }, {
   animationEnabled: false,
   swipeEnabled: false,
+  tabBarPosition: 'bottom',
   navigationOptions: {
   header: { visible: true },
 },
@@ -77,6 +78,11 @@ const AppTabNavigator = TabNavigator({
           backgroundColor: 'white'
         }
       }),
+    iconStyle: {
+      width: 100,
+      height: 100,
+      paddingBottom: 10,
+    },
       backgroundColor :"#fff",
       borderBottomWidth: 0,
       borderTopWidth: 0,
