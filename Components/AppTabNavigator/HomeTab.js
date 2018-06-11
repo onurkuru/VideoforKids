@@ -16,6 +16,7 @@ import Icons from 'react-native-vector-icons/MaterialCommunityIcons'
 
 const apiKey = 'AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw'
 const channelId = 'UCbCmjCuTUZos6Inko4u57UQ'
+const playlistId = 'LLu_YxSSRu1vbuNViVqyWFLQ'
 const results = 30
 
 class App extends Component {
@@ -41,7 +42,7 @@ class App extends Component {
   }
 
   componentDidMount(){
-    fetch(`https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&channelId=${channelId}&part=snippet,id&order=date&maxResults=${results}`)
+    fetch(`https://www.googleapis.com/youtube/v3/playlistItems/?key=${apiKey}&playlistId=${playlistId}&part=snippet,id&order=date&maxResults=${results}`)
     //fetch('https://www.googleapis.com/youtube/v3/search/?key=AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw&channelId=UCQzdMyuz0Lf4zo4uGcEujFw&part=snippet,id&order=date&maxResults=30')
     .then(res => res.json())
     .then(res => {
@@ -67,17 +68,14 @@ class App extends Component {
           <View style={styles.body}>
             {this.state.data.map((item, i) => 
            	<TouchableHighlight 
-              key={item.id.videoId} 
-              onPress={() => navigate('YouTubeVideo', {youtubeId: item.id.videoId})}>
+              key={item.snippet.resourceId.videoId} 
+              onPress={() => navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId})}>
               {/* onPress={() => this.props.navigation.navigate('YoutubeVideo', {youtubeId: item.id.videoId})}> */}
               <View style={styles.vids}>
                 <Image 
                   source={{uri: item.snippet.thumbnails.medium.url}} 
                   style={{width: 320, height: 180}}/>
                 <View style={styles.vidItems}>
-                  <Image 
-                    source={require('../../images/NightKing.jpg')} 
-                    style={{width: 40, height: 40, borderRadius: 20, marginRight: 5}}/>
                   <Text style={styles.vidText}>{item.snippet.title}</Text>
                   <Icon name='more-vert' size={20} color='#555'/> 
                 </View>

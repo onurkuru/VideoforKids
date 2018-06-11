@@ -20,7 +20,6 @@ export default class YouTubeVideo extends React.Component{
             <YouTube
                 videoId={this.props.navigation.state.params.youtubeId}   
                 play={true}             
-                fullscreen={true}       
                 loop={false}            
                 apiKey={'AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw'}
                 onReady={e => this.setState({ isReady: true })}
@@ -39,7 +38,7 @@ const styles = StyleSheet.create({
         flex: 1,
         justifyContent: 'center',
         alignItems: 'center',
-        backgroundColor: '#fff'
+        backgroundColor: '#000'
     }
 })
 
