@@ -13,10 +13,11 @@ import YouTube from 'react-native-youtube'
 import YouTubeVideo from './Components/YouTubeVideo'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import Icons from 'react-native-vector-icons/MaterialCommunityIcons'
+import {RkCard, RkText} from 'react-native-ui-kitten';
 
 const apiKey = 'AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw'
 const channelId = 'UCbCmjCuTUZos6Inko4u57UQ'
-const playlistId = 'LLu_YxSSRu1vbuNViVqyWFLQ'
+const playlistId = 'LLFeYEx4ISl6TnxobHgOZcrQ'
 const results = 30
 
 console.disableYellowBox = true;
@@ -25,17 +26,32 @@ console.disableYellowBox = true;
 class App extends Component {
    static navigationOptions = {
     headerStyle: {
-      backgroundColor: '#fff',
-    },
-    headerTitle: ( 
-      <View style={{ flex: 1, alignItems: "center" }}> 
-      <Image source={require('./images/logo-1.jpg')} style={{ height: 22, width: 100 }} /> 
-      </View> 
-      ), 
-    headerLeft: null, 
-    headerRight: null 
-  }
+      backgroundColor: '#84c550',
+      borderWidth: 0,
+      borderBottomWidth: 0,
+      shadowColor: 'transparent',
+      shadowRadius: 0,
+      elevation:0,
+      shadowOffset: {
+            height: 0,
+        }
 
+    },
+    headerLeft: (
+      <TouchableOpacity>
+        <Image 
+          style={{height: 22, width: 98, color: '#fff', marginLeft: 25}} 
+          source={require('./images/logo-2.png')} />
+      </TouchableOpacity>
+    ),
+    headerRight: (
+      <View style={{ flexDirection: 'row', marginRight: 20 }}>
+        <TouchableOpacity style={{paddingHorizontal: 5}}>
+          <Icon name='search' size={25} color={'#fff'} />
+        </TouchableOpacity>
+      </View>
+    )
+  }
 
   constructor(props){
     super(props)
@@ -65,27 +81,29 @@ class App extends Component {
   render() {
     const {navigate} = this.props.navigation
     return (
-      <View style={styles.container}>
-       
-        <ScrollView>
-          <View style={styles.body}>
+      <View  style={styles.container}>
+        <ScrollView style={styles.container}>
+          <RkCard rkType='shadowed' >
             {this.state.data.map((item, i) => 
-            <TouchableHighlight 
+            <TouchableHighlight  
               key={item.snippet.resourceId.videoId} 
-              onPress={() => navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId})}>
+              onPress={() => navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId, youtubeTitle: item.snippet.title})}>
               {/* onPress={() => this.props.navigation.navigate('YoutubeVideo', {youtubeId: item.id.videoId})}> */}
-              <View style={styles.vids}>
-                <Image 
+              <View rkCardContent style={styles.container}>
+             
+                <Image rkCardImg
                   source={{uri: item.snippet.thumbnails.medium.url}} 
-                  style={{width: 320, height: 180}}/>
+                  style={styles.image}
+                  />
                 <View style={styles.vidItems}>
-                  <Text style={styles.vidText}>{item.snippet.title}</Text>
+                  <RkText>{item.snippet.title}</RkText>
                   <Icon name='more-vert' size={20} color='#555'/> 
                 </View>
+           
               </View>
             </TouchableHighlight>
             )}
-          </View>
+          </RkCard>
         </ScrollView>
      
       </View>
@@ -95,59 +113,22 @@ class App extends Component {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
-  },
-  menu: {
-    flexDirection: 'row',
-    padding: 20,
-     backgroundColor: '#fff',
-    justifyContent: 'center',
-  },
-  body: {
     flex: 1,
     backgroundColor: '#fff',
-    alignItems: 'center',
-    padding: 30,
-    paddingTop: 0,
   },
-  vids: {
-    paddingBottom: 30,
-    width: 320,
-    alignItems: 'center',
-    backgroundColor: '#fff',
-    justifyContent: 'center',
-    borderBottomWidth: 0.6,
-    borderColor: '#aaa'
+  
+  image: {
+   borderRadius: 10,
   },
+
   vidItems: {
+    flex: 1,
     flexDirection: 'row',
-    alignItems: 'center',
-    justifyContent: 'space-around',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
     padding: 10
   },
-  vidText: {
-    padding: 20,
-    color: '#000'
-  },
-  tabBar: {
-    backgroundColor: '#fff',
-    height: 70,
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    borderTopWidth: 0.5,
-    borderColor: '#bbb'
-  },
-  tabItems: {
-    alignItems: 'center',
-    justifyContent: 'center',
-    paddingBottom: 5
-  },
-  tabTitle: {
-    fontSize: 11,
-    color: '#333',
-    paddingTop: 4,
-    textDecorationLine: 'underline'
-  }
+ 
 })
 
 export default screens = StackNavigator({

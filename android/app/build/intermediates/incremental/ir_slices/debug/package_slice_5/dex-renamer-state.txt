@@ -1,4 +1,4 @@
-#Fri Jun 08 17:57:19 EET 2018
-base.0=/Users/investstandart/Desktop/deneme/VideoforKids/android/app/build/intermediates/transforms/dexMerger/debug/120
+#Tue Jun 12 16:37:07 EET 2018
+base.0=/Users/investstandart/Desktop/deneme/videoforkids/android/app/build/intermediates/transforms/dexMerger/debug/6
 path.0=classes.dex
 renamed.0=classes.dex

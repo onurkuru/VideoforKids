@@ -1,13 +1,15 @@
 import React from 'react'
-import { StyleSheet, View } from 'react-native'
+import { StyleSheet, View,Text } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import YouTube from 'react-native-youtube'
+import Related from './RelatedComponent'
+
 
 export default class YouTubeVideo extends React.Component{
     static navigationOptions = {
-        headerTitle: 'YouTube',
+        headerTitle: '',
         headerStyle: {
-            backgroundColor: '#000'
+            backgroundColor: '#7ed4d2'
         }, 
         headerTitleStyle: {
             color: '#fff'
@@ -17,6 +19,7 @@ export default class YouTubeVideo extends React.Component{
     render() {
         return (
           <View style={styles.container}>
+
             <YouTube
                 videoId={this.props.navigation.state.params.youtubeId}   
                 play={true}             
@@ -26,8 +29,9 @@ export default class YouTubeVideo extends React.Component{
                 onChangeState={e => this.setState({ status: e.state })}
                 onChangeQuality={e => this.setState({ quality: e.quality })}
                 onError={e => this.setState({ error: e.error })}
-                style={{ alignSelf: 'stretch', height: 300 }}
+                style={{ alignSelf: 'stretch', height: 250 }}
             />
+            <Related videoId={this.props.navigation.state.params.youtubeId}  />
           </View>
         )
     }
@@ -36,9 +40,6 @@ export default class YouTubeVideo extends React.Component{
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
-        alignItems: 'center',
-        backgroundColor: '#000'
     }
 })
 

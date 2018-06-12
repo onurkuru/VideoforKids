@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/Users/investstandart/Desktop/deneme/VideoforKids/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
+            "outputFile": "/Users/investstandart/Desktop/deneme/videoforkids/android/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v12/values-v12.xml",
             "map": [
                 {
-                    "source": "/Users/investstandart/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/6e17f84629686412820373ecfb7436e1/res/values-v12/values-v12.xml",
+                    "source": "/Users/investstandart/.gradle/caches/transforms-1/files-1.1/appcompat-v7-23.0.1.aar/e1fba7a5e10d9140e2aee79dab045eca/res/values-v12/values-v12.xml",
                     "from": {
                         "startLines": "4,7,10,11",
                         "startColumns": "4,4,4,4",

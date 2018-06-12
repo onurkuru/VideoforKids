@@ -1,14 +1,14 @@
 dependencies: \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/third-party/glog-0.3.4/src/utilities.cc \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/googleinit.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/stacktrace.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/symbolize.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/commandlineflags.h \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/stacktrace_x86_64-inl.h
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/third-party/glog-0.3.4/src/utilities.cc \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/utilities.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/mutex.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/third-party/glog-0.3.4/src/config.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/config.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/logging.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/log_severity.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/glog/vlog_is_on.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/googleinit.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/stacktrace.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/symbolize.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/base/commandlineflags.h \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/React/../third-party/glog-0.3.4/src/stacktrace_x86_64-inl.h

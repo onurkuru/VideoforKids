@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jschelpers/Unicode.h
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jschelpers/Unicode.cpp \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jschelpers/Unicode.h

@@ -65,24 +65,27 @@ class App extends Component {
       <View style={styles.container}>
        
         <ScrollView>
-          <View style={styles.body}>
+          <RkCard rkType='shadowed' >
             {this.state.data.map((item, i) => 
            	<TouchableHighlight 
               key={item.snippet.resourceId.videoId} 
               onPress={() => navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId})}>
               {/* onPress={() => this.props.navigation.navigate('YoutubeVideo', {youtubeId: item.id.videoId})}> */}
-              <View style={styles.vids}>
-                <Image 
+               <View rkCardContent style={styles.container}>
+             
+                <Image rkCardImg
                   source={{uri: item.snippet.thumbnails.medium.url}} 
-                  style={{width: 320, height: 180}}/>
+                  style={styles.image}
+                  />
                 <View style={styles.vidItems}>
-                  <Text style={styles.vidText}>{item.snippet.title}</Text>
+                  <RkText>{item.snippet.title}</RkText>
                   <Icon name='more-vert' size={20} color='#555'/> 
                 </View>
+           
               </View>
             </TouchableHighlight>
             )}
-          </View>
+          </RkCard>
         </ScrollView>
      
 	    </View>

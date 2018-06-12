@@ -3,10 +3,10 @@
 <plist version="1.0">
 <dict>
 	<key>application-identifier</key>
-	<string>Apple Software.org.reactjs.native.example.VideoforKid</string>
+	<string>3P82XP975A.org.reactjs.native.VideoforKids</string>
 	<key>keychain-access-groups</key>
 	<array>
-		<string>Apple Software.org.reactjs.native.example.VideoforKid</string>
+		<string>3P82XP975A.org.reactjs.native.VideoforKids</string>
 	</array>
 </dict>
 </plist>

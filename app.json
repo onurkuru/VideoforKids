@@ -1,4 +1,7 @@
 {
   "name": "VideoforKid",
   "displayName": "VideoforKid"
+  "config": {
+        "usesNonExemptEncryption": false
+      }
 }

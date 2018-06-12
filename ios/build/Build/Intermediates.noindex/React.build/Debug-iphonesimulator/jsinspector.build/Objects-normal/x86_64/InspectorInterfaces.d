@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
-  /Users/onur/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.cpp \
+  /Users/investstandart/Desktop/deneme/videoforkids/node_modules/react-native/ReactCommon/jsinspector/InspectorInterfaces.h
