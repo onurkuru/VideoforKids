@@ -131,7 +131,7 @@ const styles = StyleSheet.create({
  
 })
 
-export default screens = StackNavigator({
+export default App = StackNavigator({
   Home: { screen: App },
   YouTubeVideo: { screen: YouTubeVideo }
 })

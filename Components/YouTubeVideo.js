@@ -1,11 +1,11 @@
-import React from 'react'
+import React, { Component } from 'react'
 import { StyleSheet, View,Text } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import YouTube from 'react-native-youtube'
 import Related from './RelatedComponent'
 
 
-export default class YouTubeVideo extends React.Component{
+class YoutubeVideo extends Component {
     static navigationOptions = {
         headerTitle: '',
         headerStyle: {
@@ -16,13 +16,21 @@ export default class YouTubeVideo extends React.Component{
         }
     }
 
+ constructor(props){
+    super(props)
+    this.state = {
+      VideoId: this.props.navigation.state.params.youtubeId,
+    }
+  }
+
+
     render() {
         return (
           <View style={styles.container}>
-
+<Text>{this.state.VideoId}  </Text>
             <YouTube
-                videoId={this.props.navigation.state.params.youtubeId}   
-                play={true}             
+                videoId={this.state.VideoId}  
+                play={false}             
                 loop={false}            
                 apiKey={'AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw'}
                 onReady={e => this.setState({ isReady: true })}
@@ -31,7 +39,8 @@ export default class YouTubeVideo extends React.Component{
                 onError={e => this.setState({ error: e.error })}
                 style={{ alignSelf: 'stretch', height: 250 }}
             />
-            <Related videoId={this.props.navigation.state.params.youtubeId}  />
+            <Related videoId={this.state.VideoId}  onVideoClick={(videoID) => { this.setState({ VideoId: videoID }) }}
+  /> 
           </View>
         )
     }
@@ -42,4 +51,6 @@ const styles = StyleSheet.create({
         flex: 1,
     }
 })
+export default YoutubeVideo 
+
 

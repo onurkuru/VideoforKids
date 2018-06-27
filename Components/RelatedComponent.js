@@ -19,18 +19,26 @@ const channelId = 'UCwZrpRCU4MotIIzhl5_6KBQ'
 const results = 30
 
 
-
 class Related extends Component {
+
 
 
  constructor(props){
     super(props)
     this.state = {
-      data: []
+      data: [],
+      VideoId: this.props.videoId
     }
-  }
+    }
+
+onVideoClick(videoID) 
+{ 
+  this.setState({ VideoId: videoID }) 
+}
+
 componentDidMount(){
-    fetch(`https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&relatedToVideoId=${this.props.videoId}&part=snippet&type=video`)
+
+    fetch(`https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&relatedToVideoId=${this.state.VideoId}&part=snippet&type=video`)
     //fetch('https://www.googleapis.com/youtube/v3/search/?key=AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw&channelId=UCQzdMyuz0Lf4zo4uGcEujFw&part=snippet,id&order=date&maxResults=30')
     .then(res => res.json())
     .then(res => {
@@ -47,9 +55,11 @@ componentDidMount(){
     })
   }
 
+
+
+
   render(){
     return (
-      
       <View>
 
 <ScrollView>
@@ -57,9 +67,9 @@ componentDidMount(){
             {this.state.data.map((item, i) => 
             <TouchableHighlight 
               key={item.id.videoId} 
-              onPress={() => navigate('YouTubeVideo', {youtubeId: item.id.videoId})}>
-              {/* onPress={() => this.props.navigation.navigate('YoutubeVideo', {youtubeId: item.id.videoId})}> */}
+              onPress={() => {this.props.onVideoClick(item.id.videoId)} }>
               <View rkCardContent>
+              <Text>{item.id.videoId}</Text>
                 <Image  rkCardImg
                   source={{uri: item.snippet.thumbnails.medium.url}} 
                   style={styles.image}/>
@@ -99,4 +109,6 @@ const styles = StyleSheet.create({
   },
  
 });
+
+
 

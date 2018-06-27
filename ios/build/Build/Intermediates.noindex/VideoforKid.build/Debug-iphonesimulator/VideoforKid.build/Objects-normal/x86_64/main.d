@@ -1,3 +1,3 @@
 dependencies: \
-  /Users/investstandart/Desktop/deneme/videoforkids/ios/VideoforKid/main.m \
-  /Users/investstandart/Desktop/deneme/videoforkids/ios/VideoforKid/AppDelegate.h
+  /Users/investstandart/Desktop/a/VideoforKids/ios/VideoforKid/main.m \
+  /Users/investstandart/Desktop/a/VideoforKids/ios/VideoforKid/AppDelegate.h

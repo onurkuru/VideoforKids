@@ -38,11 +38,11 @@
 		</data>
 		<key>Assets.car</key>
 		<data>
-		oCGD6iT6mhLNsD5JAqEhgbHK3bM=
+		GU7kEUX6NEnhMO2kqA+81zgYLK0=
 		</data>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<data>
-		uAk1S2CnJtcP0heHapTd6g/UOBE=
+		faEx7iLIbkALLarnWpBocytvnhM=
 		</data>
 		<key>Entypo.ttf</key>
 		<data>
@@ -64,9 +64,50 @@
 		<data>
 		SyvObHkkk6SlcWtv7C2+/olJLD8=
 		</data>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<data>
+		8CN5cCzwKl0+7ieNPMN/SawZQA8=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<data>
+		Cwsl4MoHt6dTvyYXRy5C2x7Kd88=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<data>
+		UU+vWjYvpE8lKAxV1lE2tUbIZA0=
+		</data>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<data>
+		znuKt4UiTOJWwzrlgwaYX94o/a4=
+		</data>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<data>
+		uPxPInP5h9+ERgCm8NCXpuuMEmg=
+		</data>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<data>
+		aHoR6mqqp0XWLqiw49+MRuFNQLk=
+		</data>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<data>
+		2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
+		</data>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<data>
+		DmGu9k7yBOLSfwtyNbn3zYir630=
+		</data>
 		<key>Info.plist</key>
 		<data>
-		9n3KvO3QrBkRVZGhU6AMCyHcb9Q=
+		RrJIb0RZscWtEalCUjAUt/D3h/s=
 		</data>
 		<key>Ionicons.ttf</key>
 		<data>
@@ -87,6 +128,26 @@
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
+		</data>
+		<key>PlugIns/VideoforKidTests.xctest.dSYM/Contents/Info.plist</key>
+		<data>
+		HTakJrlMdVfZN10sPkyO8n6WfeU=
+		</data>
+		<key>PlugIns/VideoforKidTests.xctest.dSYM/Contents/Resources/DWARF/VideoforKidTests</key>
+		<data>
+		r56q0bqkRqLLtpqP/YzwdrjyDmc=
+		</data>
+		<key>PlugIns/VideoforKidTests.xctest/Info.plist</key>
+		<data>
+		DMTVEZzetBl8EPU3cvV2JLcUT8g=
+		</data>
+		<key>PlugIns/VideoforKidTests.xctest/VideoforKidTests</key>
+		<data>
+		BfwsY7uDsoRhAUOsFncpK3kvieE=
+		</data>
+		<key>PlugIns/VideoforKidTests.xctest/_CodeSignature/CodeResources</key>
+		<data>
+		fEPpC35iBcVkJuxHNmLzdf8r0T8=
 		</data>
 		<key>SimpleLineIcons.ttf</key>
 		<data>
@@ -195,22 +256,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			oCGD6iT6mhLNsD5JAqEhgbHK3bM=
+			GU7kEUX6NEnhMO2kqA+81zgYLK0=
 			</data>
 			<key>hash2</key>
 			<data>
-			ajksKX+JqV48e9cXocz62X6ZldCxglMDa5MxGm6GCXc=
+			3KIPSuBgAf5b5bhRpvE3I6nQhudC8B99bEUnl7oFcpY=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			uAk1S2CnJtcP0heHapTd6g/UOBE=
+			faEx7iLIbkALLarnWpBocytvnhM=
 			</data>
 			<key>hash2</key>
 			<data>
-			R0It76+xJBp0ey4jsQ5+athxqFMPdpFj+w5zjZGrRf8=
+			4Qjt8FOkR3q93UVxbfojdxls2nQSCpcHzI0xrc25t8s=
 			</data>
 		</dict>
 		<key>Entypo.ttf</key>
@@ -268,6 +329,107 @@
 			fh3QPdTOkLZYBSVUzXRZ3xZxZxc4mlUvpMbVal+JM+Y=
 			</data>
 		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/IDEBundleInjection</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			8CN5cCzwKl0+7ieNPMN/SawZQA8=
+			</data>
+			<key>hash2</key>
+			<data>
+			/R1Uy1RZ7ljX2V8ZHMhD4g8ieWHns9sj34YDK2McvfY=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Cwsl4MoHt6dTvyYXRy5C2x7Kd88=
+			</data>
+			<key>hash2</key>
+			<data>
+			IvG0kD54lYvEZzfjVmXtrtBdydTUy1uFZkZXUddfTzY=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			UU+vWjYvpE8lKAxV1lE2tUbIZA0=
+			</data>
+			<key>hash2</key>
+			<data>
+			Ja3vToXIdN/BmsoAh4U4btDVl5lKbzndKf99CyxV6K4=
+			</data>
+		</dict>
+		<key>Frameworks/IDEBundleInjection.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			znuKt4UiTOJWwzrlgwaYX94o/a4=
+			</data>
+			<key>hash2</key>
+			<data>
+			napzzKlhgK6Qoqz8QO+9TkyuIsW5V+s6GmClALe2lT4=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			uPxPInP5h9+ERgCm8NCXpuuMEmg=
+			</data>
+			<key>hash2</key>
+			<data>
+			N77/gSJpnPT4ryPaR4IJ55aYyiiMCKjlq79qrCmGxU8=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/XCTest</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			aHoR6mqqp0XWLqiw49+MRuFNQLk=
+			</data>
+			<key>hash2</key>
+			<data>
+			unqlGEn5cq6B36PWWq/mAoeeub7L9yZ3vWK7mP9EscQ=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			2JoYDV6DTsckEmF+l3Ruo1S1Iqk=
+			</data>
+			<key>hash2</key>
+			<data>
+			OXS9XX1oATlfFoPHZbc7OGt7HUXfXzNrCz28TkkBo/g=
+			</data>
+		</dict>
+		<key>Frameworks/XCTest.framework/en.lproj/InfoPlist.strings</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			TuBj57ZP6zBqcL9HttO2Rucaw9E=
+			</data>
+			<key>hash2</key>
+			<data>
+			89RGkjZaKuewYnjpzwhIswhqfrU8+pcEXqM/DHVrUmo=
+			</data>
+			<key>optional</key>
+			<true/>
+		</dict>
+		<key>Frameworks/XCTest.framework/version.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DmGu9k7yBOLSfwtyNbn3zYir630=
+			</data>
+			<key>hash2</key>
+			<data>
+			2hnwNPgdaewT28DbTqe0Gpaccdc2akBF8IjnGtISc58=
+			</data>
+		</dict>
 		<key>Ionicons.ttf</key>
 		<dict>
 			<key>hash</key>
@@ -310,6 +472,61 @@
 			<key>hash2</key>
 			<data>
 			NC9CWcIUkNdDyFv9XLIgM5voHcU7RU+sU2mnqmpBMI4=
+			</data>
+		</dict>
+		<key>PlugIns/VideoforKidTests.xctest.dSYM/Contents/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			HTakJrlMdVfZN10sPkyO8n6WfeU=
+			</data>
+			<key>hash2</key>
+			<data>
+			M3fMTt+CGDwA3IU2Oq0Yix5SDe3FmPatilhgojPFQ1c=
+			</data>
+		</dict>
+		<key>PlugIns/VideoforKidTests.xctest.dSYM/Contents/Resources/DWARF/VideoforKidTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			r56q0bqkRqLLtpqP/YzwdrjyDmc=
+			</data>
+			<key>hash2</key>
+			<data>
+			+xuzkL6ADMmTRt5uZEbp+ULp/yCuNemnaM/PwSla1EM=
+			</data>
+		</dict>
+		<key>PlugIns/VideoforKidTests.xctest/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			DMTVEZzetBl8EPU3cvV2JLcUT8g=
+			</data>
+			<key>hash2</key>
+			<data>
+			Zed7AcKVYFOdOucQ5JZwTWteRzf1f3wLQbzn3L7BnKk=
+			</data>
+		</dict>
+		<key>PlugIns/VideoforKidTests.xctest/VideoforKidTests</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			BfwsY7uDsoRhAUOsFncpK3kvieE=
+			</data>
+			<key>hash2</key>
+			<data>
+			zOkhlajauyVi+3pG86pAzTbYQc/H3LJZYd8+rLeDodo=
+			</data>
+		</dict>
+		<key>PlugIns/VideoforKidTests.xctest/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			fEPpC35iBcVkJuxHNmLzdf8r0T8=
+			</data>
+			<key>hash2</key>
+			<data>
+			sKqJto+iRGVlh1xNPgOP/BI/Q4+OMgvgqj9AxamTlow=
 			</data>
 		</dict>
 		<key>SimpleLineIcons.ttf</key>
