@@ -3,9 +3,10 @@ import {
   Image, 
   TouchableHighlight, 
   TouchableOpacity, 
+  ScrollView, 
   StyleSheet, 
-  Text, 
-  FlatList,
+  Text,
+  FlatList, 
   View 
 } from 'react-native'
 import { StackNavigator } from 'react-navigation'
@@ -13,7 +14,7 @@ import YouTube from 'react-native-youtube'
 import YouTubeVideo from './Components/YouTubeVideo'
 import Icon from 'react-native-vector-icons/MaterialIcons'
 import Icons from 'react-native-vector-icons/MaterialCommunityIcons'
-import {RkCard, RkText} from 'react-native-ui-kitten';
+import {RkCard, RkText,RkStyleSheet} from 'react-native-ui-kitten';
 
 const apiKey = 'AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw'
 const channelId = 'UCbCmjCuTUZos6Inko4u57UQ'
@@ -78,61 +79,64 @@ class App extends Component {
     })
   }
 
- 
-
-  render() {
+ render() {
     return (
-      <FlatList
-      showsVerticalScrollIndicator={false}
-        data={this.state.data}
-       renderItem={({ item }) => {
-        return (
-            <TouchableOpacity
-              delayPressIn={70}
-              activeOpacity={0.8}
-              key={item.snippet.resourceId.videoId} 
-              onPress={() => this.props.navigation.navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId, youtubeTitle: item.snippet.title})}>
-              <RkCard rkType='imgBlock' style={styles.card}>
-                <Image rkCardImg style={styles.image}
-                  source={{uri: item.snippet.thumbnails.medium.url}} 
-                  />
-             <View rkCardFooter>
-            <RkText>{item.snippet.title}</RkText>
+      <FlatList style={styles.container}>
+      {this.state.data.map((item, i) => 
+      <TouchableOpacity
+        delayPressIn={70}
+        activeOpacity={0.8}
+        key={item.snippet.resourceId.videoId} 
+        onPress={() => navigate('YouTubeVideo', {youtubeId: item.snippet.resourceId.videoId, youtubeTitle: item.snippet.title})}>
+        <RkCard rkType='imgBlock' style={styles.card}>
+          <Image rkCardImg source={{uri: item.snippet.thumbnails.medium.url}}/>
+
+          <View rkCardImgOverlay rkCardContent style={styles.overlay}>
+            <RkText rkType='header4 inverseColor'>{item.snippet.title}</RkText>
+            <RkText style={styles.time}
+                    rkType='secondary2 inverseColor'>de</RkText>
           </View>
-              </RkCard>
-            </TouchableOpacity>
-          );
-        }}
-        keyExtractor={(item, index) => index}
-        style={styles.container} />
+          <View rkCardFooter>
+            <RkText>dlee</RkText>
+          </View>
+        </RkCard>
+      </TouchableOpacity>
+            )}
+            </FlatList>
 
     )
   }
+
 }
 
-const styles = StyleSheet.create({
+
+let styles = RkStyleSheet.create(theme => ({
   container: {
-    backgroundColor: '#fff',
+    backgroundColor: theme.colors.screen.scroll,
     paddingVertical: 8,
     paddingHorizontal: 14
   },
   card: {
     marginVertical: 8,
-    borderRadius: 20,
-        overflow: 'hidden' 
-
+  },
+  time: {
+    marginTop: 5
   },
 
   image: {
-    borderTopLeftRadius: 20,
-    borderTopRightRadius: 20,
-    overflow: 'hidden' 
+   borderRadius: 10,
   },
 
- 
-})
+  vidItems: {
+    flex: 1,
+    flexDirection: 'row',
+    alignItems: 'flex-end',
+    justifyContent: 'space-between',
+    padding: 10
+  }
+}));
 
 export default App = StackNavigator({
   Home: { screen: App },
-  YouTubeVideo: { screen: YouTubeVideo  }
+  YouTubeVideo: { screen: YouTubeVideo }
 })

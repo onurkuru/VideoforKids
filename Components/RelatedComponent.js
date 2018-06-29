@@ -6,7 +6,8 @@ import {
   ScrollView, 
   StyleSheet, 
   Text, 
-  View 
+  View,
+  FlatList,
 } from 'react-native'
 import { StackNavigator } from 'react-navigation'
 import YouTube from 'react-native-youtube'
@@ -38,7 +39,7 @@ onVideoClick(videoID)
 
 componentDidMount(){
 
-    fetch(`https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&relatedToVideoId=${this.state.VideoId}&part=snippet&type=video`)
+    fetch(`https://www.googleapis.com/youtube/v3/search/?key=${apiKey}&relatedToVideoId=${this.state.VideoId}&part=snippet&type=video&maxResults=30`)
     //fetch('https://www.googleapis.com/youtube/v3/search/?key=AIzaSyBJ3ntReiv0L19H2RoYW62LpRdIuyPhIpw&channelId=UCQzdMyuz0Lf4zo4uGcEujFw&part=snippet,id&order=date&maxResults=30')
     .then(res => res.json())
     .then(res => {
@@ -58,35 +59,36 @@ componentDidMount(){
 
 
 
-  render(){
+   render() {
     return (
-      <View>
-
-<ScrollView>
-         <RkCard rkType='shadowed' >
-            {this.state.data.map((item, i) => 
-            <TouchableHighlight 
+      <FlatList
+        style={{marginTop: 20}}
+        showsVerticalScrollIndicator={false}
+        data={this.state.data}
+        renderItem={({ item }) => {
+          return (
+              <TouchableOpacity
+              delayPressIn={70}
+              activeOpacity={0.8}
               key={item.id.videoId} 
-              onPress={() => {this.props.onVideoClick(item.id.videoId)} }>
-              <View rkCardContent>
-              <Text>{item.id.videoId}</Text>
-                <Image  rkCardImg
+              onPress={() => {this.props.onVideoClick(item.id.videoId)} }> 
+              <RkCard rkType='imgBlock' style={styles.card}>
+                <Image rkCardImg style={styles.image}
                   source={{uri: item.snippet.thumbnails.medium.url}} 
-                  style={styles.image}/>
-                <View style={styles.vidItems}>
-                  
-                  <Text style={styles.vidText}>{item.snippet.title}</Text>
-                  <Icon name='more-vert' size={20} color='#555'/> 
-                </View>
-              </View>
-            </TouchableHighlight>
-            )}
-          </RkCard>
-        </ScrollView>
-      </View>
+                  />
+             <View rkCardFooter>
+            <RkText>{item.snippet.title}</RkText>
+          </View>
+              </RkCard>
+            </TouchableOpacity>
+          );
+        }}
+        keyExtractor={(item, index) => index}
+      />
     );
   }
 }
+
 export default Related;
 
 
